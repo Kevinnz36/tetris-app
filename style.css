@@ -1,11 +1,12 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: dark light;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,23 +17,62 @@
 
 body {
   margin: 0;
-  padding:0;
+  padding: 0;
   display: grid;
-  place-content: center;
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: radial-gradient(circle at center center, transparent, rgb(28, 17, 55)), repeating-linear-gradient(135deg, rgb(28, 17, 55) 0px, rgb(28, 17, 55) 2px, transparent 2px, transparent 10px, rgb(28, 17, 55) 10px, rgb(28, 17, 55) 11px, transparent 11px, transparent 21px), repeating-linear-gradient(45deg, rgb(33, 18, 57) 0px, rgb(33, 18, 57) 4px, transparent 4px, transparent 8px), linear-gradient(90deg, rgb(28, 17, 55), rgb(28, 17, 55));
+}
+
+#app {
+  margin-top: 20px;
+}
+
+canvas {
+
+  border: 3px solid #d0d0d0;
 
 }
 
-section{
+button {
+  margin-bottom: 6px;
+  padding: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+  border-radius: 2px;
+  background-color: #3d1a46;
+  border: 1px solid #d0d0d0;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: all 300ms;
+  background-color: #230e28;
+}
+
+strong {
+  text-align: center;
+  background-color: #000;
+  color: greenyellow;
+  padding: 8px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+}
+
+section {
   background: #000;
   cursor: pointer;
-  width: 100vw;
-  height: 100hw;
-  top: 0;
-  inset: 0;
   display: grid;
-  font-size: 3em;
+  font-size: 2em;
   place-content: center;
-
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 
+section:hover {
+  transition: all 300ms;
+  background-color: #3d1a46;
+}
